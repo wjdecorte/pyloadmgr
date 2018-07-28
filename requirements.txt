@@ -1,12 +1,5 @@
-## Requirements File
-## 06/05/2017 - v2.1.3
-## 09/05/2017 - v2.2.1
-## jwd3 - jason.decorte@equifax.com
-###################################################
 
 # Set index to local
---index-url http://cia-devpi.app.c9.equifax.com/cia/pypi/+simple/
---find-links http://scm.devcentral.equifax.com/svn/GISBI/trunk/app/python/dist/
 
 # Third-party packages
 bitarray==0.8.1
@@ -36,4 +29,3 @@ thrift-sasl==0.2.1
 # Custom packages
 pswdfile==3.0.0
 pyloadmgr==2.2.1
-Token-Detoken-Service==0.3
