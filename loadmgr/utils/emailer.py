@@ -31,14 +31,14 @@ __updated__ = '05/25/2017'
 __all__ = []
 
 
-def send_email(recipients,subject,message_text,message_html=None,files=[]):
+def send_email(recipients, subject, message_text, message_html=None, files=[]):
     """
     Send an email
     :param recipients: List of a recipient's email addresses
+    :param subject: email subject
     :param message_text: text version of the email body
     :param message_html: HTML version of the email body
     :param files: List of files to attach to the email
-    :param mailhost: Host IP or name of mail server
     :return:
     """
     msg = MIMEMultipart('alternative')
@@ -46,16 +46,16 @@ def send_email(recipients,subject,message_text,message_html=None,files=[]):
     smtp_host = cfg.EmailSettings.smtp_host or 'localhost'
     smtp_port = cfg.EmailSettings.smtp_port or smtplib.SMTP_PORT
     from_domain = cfg.EmailSettings.from_domain or smtp_host
-    msg['From'] = "{0}@{1}".format(getuser(),from_domain)
+    msg['From'] = "{0}@{1}".format(getuser(), from_domain)
     msg['To'] = COMMASPACE.join(recipients)
     msg.attach(MIMEText(message_text, 'plain'))
     if message_html:
         msg.attach(MIMEText(message_html, 'html'))
     for f in files:
-        with open(f,'rb') as afile:
-            part = MIMEApplication(afile.read(),name=os.path.basename(f))
+        with open(f, 'rb') as afile:
+            part = MIMEApplication(afile.read(), name=os.path.basename(f))
             part['Content-Disposition'] = 'attachment; filename="{0}"'.format(os.path.basename(f))
             msg.attach(part)
-    s = smtplib.SMTP(smtp_host,smtp_port)
-    s.sendmail(msg.get('From'),recipients,msg.as_string())
+    s = smtplib.SMTP(smtp_host, smtp_port)
+    s.sendmail(msg.get('From'), recipients, msg.as_string())
     s.quit()
