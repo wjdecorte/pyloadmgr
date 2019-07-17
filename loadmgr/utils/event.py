@@ -1,12 +1,6 @@
 """
 loadmgr.utils.event.py - Event related Utility Functions
 
-@author - jwd3
-
-@license:    Apache License 2.0
-
-@contact:    jason.decorte@equifax.com
-
 Version History:
 0.2 jwd3 03/08/2017 HotFix
     Added generic exception handling to capture any exception

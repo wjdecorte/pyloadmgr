@@ -3,12 +3,6 @@ loadmgr.cli -- Command-line client
 
 loadmgr.cli is a command-line application for automating a series of steps for a specific job.
 
-@author:     Jason DeCorte
-
-@license:  Apache License 2.0
-
-@contact:    jason.decorte@equifax.com
-
 Version History:
 0.01 jwd 8/28/2014
     Created sub-class GroupFileHandler to set umask on open for group writable file
@@ -1661,7 +1655,7 @@ def main():
         #=======================================================================
         # To add email logging support
         # import logging.handlers
-        # eh = logging.handlers.SMTPHandler('localhost','jwd3@adcppapi001','jason.decorte@equifax.com','log email test')
+        # eh = logging.handlers.SMTPHandler('localhost','jdecorte@localhost','jdecorte@decorteindustries.com','log email test')
         # eh.setFormatter(formatter)
         # eh.setLevel(logging.CRITICAL)
         # logger.addHandler(eh)

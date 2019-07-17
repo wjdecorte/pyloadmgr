@@ -1,12 +1,6 @@
 """
 <PATH> __init__.py - <DESCRIPTION>
 
-@author - jwd3
-
-@license:    Apache License 2.0
-
-@contact:    jason.decorte@equifax.com
-
 Version History:
 
 """

@@ -8,9 +8,8 @@ setup(
     version=version,
     packages=find_packages(),
     url='',
-    license='Apache License 2.0',
-    author='jwd3',
-    author_email='jason.decorte@equifax.com',
+    author='wjdecorte',
+    author_email='jdecorte@decorteindustries.com',
     description='Load Manager Workflow Engine',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

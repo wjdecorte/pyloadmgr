@@ -4,12 +4,6 @@ lmgrwrkr -- Load Manager Worker
 
 lmgrwrkr is an application that executes a job made up of a series of tasks defined in the loader metadata repository.
 
-@author:     Jason DeCorte
-
-@license:  Apache License 2.0
-
-@contact:    jason.decorte@equifax.com
-
 Version History:
 0.01 jwd 09/02/2014
     Add log file name variable replacement for task args

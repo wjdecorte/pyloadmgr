@@ -1,12 +1,6 @@
 """
 loadmgr/utils/emailer - Contains the function send_email
 
-@author - jwd3
-
-@license:    Apache License 2.0
-
-@contact:    jason.decorte@equifax.com
-
 Version History:
 0.01 jwd3 04/13/2017 v1.2.4
     Initial version

@@ -5,7 +5,6 @@ Details
     Version: 1.2.1
     Release Date: 02/22/2017
     Package: pyloadmgr-1.2.1.tar.gz
-    Repository: lmgrapp@apspplc9a813.app.c9.equifax.com:5432:loadmgrdb
     Config: $LOADMGR_CONFIG/loadmgr_config.cfg
     Language: Python (compatible with Python 2.7 only - not tested with Python 3.x)
 
